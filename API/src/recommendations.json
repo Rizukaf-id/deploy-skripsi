@@ -1,0 +1,48 @@
+{
+    "acne": {
+        "prediction": "Kulit Berjerawat",
+        "recommendation": [
+            "oil-acne-facial-wash",
+            "acne-serum",
+            "moisturizer",
+            "sunscreen"
+        ]
+    },
+    "combination": {
+        "prediction": "Kulit Kombinasi",
+        "recommendation": [
+            "everest-facial-wash",
+            "acne-serum",
+            "moisturizer",
+            "sunscreen"
+        ]
+    },
+    "dry": {
+        "prediction": "Kulit Kering dan Kusam",
+        "recommendation": [
+            "brightening-facial-wash",
+            "brightening-serum",
+            "moisturizer",
+            "sunscreen"
+        ]
+    },
+    "normal": {
+        "prediction": "Kulit Normal",
+        "recommendation": [
+            "brightening-facial-wash",
+            "everest-facial-wash",
+            "brightening-serum",
+            "moisturizer",
+            "sunscreen"
+        ]
+    },
+    "oily": {
+        "prediction": "Kulit Berminyak",
+        "recommendation": [
+            "oil-control-facial-wash",
+            "acne-serum",
+            "moisturizer",
+            "sunscreen"
+        ]
+    }
+}

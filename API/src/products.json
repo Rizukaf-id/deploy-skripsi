@@ -1,0 +1,58 @@
+{
+    "oil-acne-facial-wash": {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+    },
+    "acne-serum": {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+    },
+    "moisturizer": {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+    },
+    "sunscreen": {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+    },
+    "everest-facial-wash": {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+    },
+    "brightening-facial-wash": {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+    },
+    "brightening-serum": {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+    },
+    "oil-control-facial-wash": {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+    }
+}
