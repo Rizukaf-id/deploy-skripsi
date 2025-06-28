@@ -25,7 +25,7 @@ mkdir -p /var/www/skinscan
 cd /var/www/skinscan
 
 # Clone repository
-git clone <URL_REPOSITORY> .
+git clone https://github.com/Rizukaf-id/deploy-skripsi.git .
 ```
 
 ## Langkah 1.1: Instalasi Node.js v18.20.8 & NPM v10.8.2 (Jika belum terinstal)
