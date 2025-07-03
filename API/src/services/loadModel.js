@@ -5,7 +5,7 @@ require('dotenv').config();
 
 async function loadModel(modelName) {
     // modelName: e.g. 'mobilenet_80/model.json'
-    const modelDir = process.env.MODEL_PATH || '../../../model';
+    const modelDir = process.env.MODEL_PATH || '../../../models';
     const modelPath = path.join(__dirname, modelDir, modelName);
     console.log(`Loading model from: ${modelPath}`);
     const modelJson = JSON.parse(fs.readFileSync(modelPath, 'utf-8'));

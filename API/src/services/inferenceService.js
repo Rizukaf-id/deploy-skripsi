@@ -1,10 +1,24 @@
 const tf = require('@tensorflow/tfjs-node');
 const InputError = require('../exceptions/InputError');
 const getRecommendationBySkinType = require('./recommendationService');
+const faceValidationService = require('./faceValidationService');
 require('dotenv').config();
 
 async function predictClassification(model, image) {
   try {
+    // Simpan buffer gambar asli untuk validasi dan penyimpanan
+    const imageBuffer = Buffer.from(image);
+    
+    // VALIDASI WAJAH - Langkah pertama sebelum pemrosesan
+    console.log('Memvalidasi keberadaan wajah dalam gambar...');
+    const faceValidation = await faceValidationService.validateComplete(imageBuffer);
+    
+    if (!faceValidation.valid) {
+      throw new InputError(faceValidation.reason);
+    }
+    
+    console.log('✓ Validasi wajah berhasil:', faceValidation.message);
+    
     // Periksa ukuran gambar sebelum memproses
     const decodedImage = tf.node.decodeJpeg(image);
     const [height, width] = decodedImage.shape;
@@ -12,9 +26,6 @@ async function predictClassification(model, image) {
     if (width < 224 || height < 224) {
       throw new InputError(`Ukuran gambar terlalu kecil. Minimal ukuran 224x224 piksel, gambar yang diunggah berukuran ${width}x${height} piksel.`);
     }
-    
-    // Simpan buffer gambar asli untuk disimpan nanti
-    const imageBuffer = Buffer.from(image);
     
     const tensor = decodedImage
         .resizeNearestNeighbor([224, 224])
@@ -44,6 +55,10 @@ async function predictClassification(model, image) {
     // Kembalikan imageBuffer untuk disimpan berdasarkan kategori kulit
     return { confidenceScore, label, explanation, suggestion, imageBuffer };
   } catch (error){
+    // Pastikan untuk membersihkan tensor jika ada error
+    if (typeof decodedImage !== 'undefined') {
+      decodedImage.dispose();
+    }
     throw new InputError(`Terjadi kesalahan input: ${error.message}`);
   }
 }

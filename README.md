@@ -9,6 +9,13 @@ Aplikasi Skin Scan terdiri dari tiga komponen utama:
 2. **Frontend** - Aplikasi React.js dengan Vite untuk antarmuka pengguna
 3. **Model Machine Learning** - Model TensorFlow.js untuk prediksi jenis kulit
 
+## Fitur Keamanan dan Validasi
+
+- **Validasi Wajah** - Sistem otomatis memvalidasi bahwa gambar yang diupload mengandung wajah
+- **Deteksi Warna Kulit** - Analisis warna untuk memastikan foto adalah foto wajah manusia
+- **Validasi Dimensi** - Memastikan gambar memiliki resolusi yang cukup untuk analisis akurat
+- **Konfigurable** - Tingkat validasi dapat disesuaikan melalui environment variables
+
 ## Prasyarat
 
 - Node.js v18.20.8 (direkomendasikan)

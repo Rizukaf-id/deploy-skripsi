@@ -1,0 +1,935 @@
+[
+  {
+    "id": "20b78202-7552-4965-8157-393abdd5e31f",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 78.45042943954468,
+    "createdAt": "2025-07-01T23:48:42.638Z",
+    "imagePath": "/uploads/acne/acne_1751413722640_b1e48119cf75be94.jpg"
+  },
+  {
+    "id": "4649a519-59e8-49af-9594-32c8b456ebd1",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 75.053870677948,
+    "createdAt": "2025-07-02T09:54:31.963Z",
+    "imagePath": "/uploads/oily/oily_1751450071965_de9947a68252621d.jpg"
+  },
+  {
+    "id": "7f9d40aa-fc16-41f6-813e-93fe975ff12c",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 48.47800135612488,
+    "createdAt": "2025-07-03T00:19:36.177Z",
+    "imagePath": "/uploads/oily/oily_1751501976180_2c60dfd4a52316b9.jpg"
+  },
+  {
+    "id": "e6bc5e89-21f5-47d5-83a3-962730aedb89",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 99.32253956794739,
+    "createdAt": "2025-07-03T00:19:42.717Z",
+    "imagePath": "/uploads/oily/oily_1751501982718_9ce305bcb96ed837.jpg"
+  },
+  {
+    "id": "24f97653-62fa-417a-80fb-4f1170815e83",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 99.32253956794739,
+    "createdAt": "2025-07-03T00:19:44.469Z",
+    "imagePath": "/uploads/oily/oily_1751501984470_b0361c1ba2af22f2.jpg"
+  },
+  {
+    "id": "a9f355c2-9f10-40a9-8bb1-07251460ccad",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 88.07905912399292,
+    "createdAt": "2025-07-03T00:19:48.295Z",
+    "imagePath": "/uploads/normal/normal_1751501988297_250e546a2c6bb6b8.jpg"
+  },
+  {
+    "id": "b23746ea-f3fb-44d4-af82-5932cf9a89ce",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 67.19675660133362,
+    "createdAt": "2025-07-03T00:34:08.612Z",
+    "imagePath": "/uploads/normal/normal_1751502848614_12c385069c21e9fb.jpg"
+  },
+  {
+    "id": "28802115-68aa-41ef-b4a7-125d16ea2d04",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 89.28260803222656,
+    "createdAt": "2025-07-03T01:01:59.608Z",
+    "imagePath": "/uploads/normal/normal_1751504519610_270cf8e9ae4e5af5.jpg"
+  },
+  {
+    "id": "2672bc10-7dc8-4461-a0d5-295c47e9445d",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 38.32916021347046,
+    "createdAt": "2025-07-03T01:06:31.256Z",
+    "imagePath": "/uploads/acne/acne_1751504791259_8fa271ebab9dac12.jpg"
+  },
+  {
+    "id": "673179cf-36e2-4ae7-bc89-6a651989675d",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.53606271743774,
+    "createdAt": "2025-07-03T01:06:57.108Z",
+    "imagePath": "/uploads/acne/acne_1751504817110_6ddbb796b9679245.jpg"
+  },
+  {
+    "id": "7cf1a2af-a197-443b-919f-610813f6da26",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 49.663880467414856,
+    "createdAt": "2025-07-03T01:07:11.004Z",
+    "imagePath": "/uploads/acne/acne_1751504831006_4df81dc1dca1f3a6.jpg"
+  },
+  {
+    "id": "69561010-af35-4ec5-b347-d12a1b77b96f",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 49.663880467414856,
+    "createdAt": "2025-07-03T01:07:15.791Z",
+    "imagePath": "/uploads/acne/acne_1751504835792_7378c08b1b229114.jpg"
+  },
+  {
+    "id": "bbca660b-f230-4f43-9c2e-101de2e22d92",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 99.0898072719574,
+    "createdAt": "2025-07-03T01:07:28.295Z",
+    "imagePath": "/uploads/acne/acne_1751504848297_fdf7825a3af4473b.jpg"
+  },
+  {
+    "id": "f6919f49-3eb5-4271-ad01-713065774716",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 86.88958287239075,
+    "createdAt": "2025-07-03T01:07:56.031Z",
+    "imagePath": "/uploads/oily/oily_1751504876034_84238f894d6edb7b.jpg"
+  },
+  {
+    "id": "6bc38273-6f87-48a2-af81-6d3be97b9fd6",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 84.49211716651917,
+    "createdAt": "2025-07-03T01:08:07.307Z",
+    "imagePath": "/uploads/oily/oily_1751504887308_a39b7beaa162524e.jpg"
+  },
+  {
+    "id": "6f747aef-0dd0-4e87-9b25-8cd8dd504b36",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 95.15987038612366,
+    "createdAt": "2025-07-03T01:28:51.453Z",
+    "imagePath": "/uploads/oily/oily_1751506131456_f8fd8008864404f4.jpg"
+  },
+  {
+    "id": "c7021a2d-3325-4fb9-a2e6-63b982a9c3c4",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 86.1310064792633,
+    "createdAt": "2025-07-03T01:29:16.492Z",
+    "imagePath": "/uploads/acne/acne_1751506156494_1823dbc3fbc526ba.jpg"
+  },
+  {
+    "id": "1f3e8742-92a7-4cbe-97f0-fc5611c3cab5",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 86.1310064792633,
+    "createdAt": "2025-07-03T01:29:22.269Z",
+    "imagePath": "/uploads/acne/acne_1751506162271_833a37639af85ecc.jpg"
+  },
+  {
+    "id": "aee55bd3-c9b1-4a97-9455-3ec71aef4023",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 86.1310064792633,
+    "createdAt": "2025-07-03T01:29:25.938Z",
+    "imagePath": "/uploads/acne/acne_1751506165939_db9c6333a55c5431.jpg"
+  },
+  {
+    "id": "886bf16b-f257-4ab8-a315-25bdf5e811c7",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 89.27197456359863,
+    "createdAt": "2025-07-03T01:29:37.181Z",
+    "imagePath": "/uploads/oily/oily_1751506177182_291d5d6c7884e356.jpg"
+  },
+  {
+    "id": "58ec3018-f1ca-45e7-be77-cb316245e49b",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 99.85237717628479,
+    "createdAt": "2025-07-03T01:30:00.874Z",
+    "imagePath": "/uploads/acne/acne_1751506200875_f4466aee2ecd764e.jpg"
+  },
+  {
+    "id": "ce4a3be8-9e5c-45b7-8caa-375e66fa42c8",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 49.78305995464325,
+    "createdAt": "2025-07-03T01:34:09.882Z",
+    "imagePath": "/uploads/acne/acne_1751506449883_da65d4cf2f32228b.jpg"
+  },
+  {
+    "id": "17bcc8d8-1693-49b3-b297-d7cb74f4efb5",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 49.78305995464325,
+    "createdAt": "2025-07-03T01:35:50.692Z",
+    "imagePath": "/uploads/acne/acne_1751506550694_197f9d44e53453f6.jpg"
+  },
+  {
+    "id": "ef89da14-ed4f-4caf-85ad-d6f941c55c23",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 58.274251222610474,
+    "createdAt": "2025-07-03T01:37:26.939Z",
+    "imagePath": "/uploads/oily/oily_1751506646940_25f2a9f82a235570.jpg"
+  }
+]

@@ -10,6 +10,7 @@ export default function SkinScanPage() {
   const [showCamera, setShowCamera] = useState(false);
   const [imageDimensions, setImageDimensions] = useState({ width: 0, height: 0 });
   const [isImageTooSmall, setIsImageTooSmall] = useState(false);
+  const [validationError, setValidationError] = useState(null);
   const [savedImagePath, setSavedImagePath] = useState(null);
   const [previousScans, setPreviousScans] = useState([]);
   const [isNewScan, setIsNewScan] = useState(true); // Flag untuk menandakan sedang dalam proses scan baru
@@ -50,6 +51,16 @@ export default function SkinScanPage() {
       });
     };
   }, [preview, previousScans]);
+
+  // Auto-dismiss validation error after 7 seconds
+  useEffect(() => {
+    if (validationError) {
+      const timer = setTimeout(() => {
+        setValidationError(null);
+      }, 7000);
+      return () => clearTimeout(timer);
+    }
+  }, [validationError]);
   
   // Start camera stream
   const startCamera = async () => {
@@ -132,10 +143,12 @@ export default function SkinScanPage() {
         setPreview(URL.createObjectURL(blob));
         setShowCamera(false);
         
-        // Reset result untuk scan baru
+        // Reset semua state untuk scan baru
         setResult('-');
         setSuggestion([]);
         setSavedImagePath(null);
+        setValidationError(null);
+        setLoading(false);
         setIsNewScan(true);
       }
     }, 'image/jpeg', 0.9);
@@ -175,10 +188,13 @@ export default function SkinScanPage() {
       const previewUrl = URL.createObjectURL(file);
       setPreview(previewUrl);
       
-      // Reset result untuk scan baru
+      // Reset semua state untuk scan baru
       setResult('-');
       setSuggestion([]);
       setSavedImagePath(null);
+      setValidationError(null);
+      setLoading(false);
+      setIsNewScan(true);
       
       // Matikan kamera jika sedang aktif
       if (showCamera) {
@@ -188,15 +204,40 @@ export default function SkinScanPage() {
       
       // Validate image dimensions
       validateImageDimensions(file);
-      
-      // Set flag untuk scan baru
-      setIsNewScan(true);
+    }
+  };
+
+  // Handler untuk trigger upload dengan reset
+  const handleUploadClick = () => {
+    // Simpan hasil scan sebelumnya jika ada
+    saveCurrentScanIfExists();
+    
+    // Reset file input value agar bisa upload file yang sama
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+    
+    // Reset state untuk upload baru
+    setResult('-');
+    setSuggestion([]);
+    setSavedImagePath(null);
+    setValidationError(null);
+    setLoading(false);
+    setIsNewScan(true);
+    
+    // Trigger file input click
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
     }
   };
 
   const handleScan = async () => {
     if (!image || isImageTooSmall) return;
     setLoading(true);
+    
+    // Reset validation error saat memulai scan baru
+    setValidationError(null);
+    
     const formData = new FormData();
     formData.append('image', image);
     formData.append('model_name', 'mobilenet_80/model.json');
@@ -221,13 +262,22 @@ export default function SkinScanPage() {
         
         // Tandai bahwa ini bukan scan baru lagi
         setIsNewScan(false);
+        setValidationError(null); // Clear any previous validation errors
+      } else if (response && response.status === 'fail') {
+        // Tampilkan pesan error spesifik dari server sebagai validation error
+        setValidationError(response.message);
+        setResult('-');
+        setSuggestion([]);
+        setSavedImagePath(null);
       } else {
+        setValidationError('Terjadi kesalahan yang tidak diketahui. Silakan coba lagi.');
         setResult('-');
         setSuggestion([]);
         setSavedImagePath(null);
       }
     } catch (err) {
-      alert('Gagal melakukan prediksi!');
+      console.error('Error during prediction:', err);
+      setValidationError('Gagal melakukan prediksi! Pastikan koneksi internet stabil dan coba lagi.');
       setResult('-');
       setSuggestion([]);
       setSavedImagePath(null);
@@ -244,6 +294,7 @@ export default function SkinScanPage() {
     setPreview(null);
     setImageDimensions({ width: 0, height: 0 });
     setIsImageTooSmall(false);
+    setValidationError(null); // Reset validation error
     setIsNewScan(true);
     
     // Pastikan kamera dimatikan jika sedang aktif
@@ -270,6 +321,13 @@ export default function SkinScanPage() {
       setSuggestion([]);
       setSavedImagePath(null);
       setIsImageTooSmall(false);
+      setValidationError(null);
+      setLoading(false);
+      
+      // Reset file input juga
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
       
       // Buka kamera
       setShowCamera(true);
@@ -341,6 +399,13 @@ export default function SkinScanPage() {
                       </div>
                     )}
 
+                    {validationError && (
+                      <div className="absolute bottom-0 left-0 right-0 bg-red-600 bg-opacity-90 text-white p-3 text-center font-semibold">
+                        <i className="fas fa-times-circle mr-2"></i>
+                        <div className="text-sm font-medium">{validationError}</div>
+                      </div>
+                    )}
+
                   </>
                   ) : (
                     <div className="text-center">
@@ -353,7 +418,7 @@ export default function SkinScanPage() {
                 
                 <div className="flex flex-col w-full gap-3">
                   <div className="flex flex-col lg:flex-row gap-3">
-                    <label className="w-full">
+                    <div className="w-full">
                       <input 
                         type="file" 
                         ref={fileInputRef}
@@ -361,14 +426,18 @@ export default function SkinScanPage() {
                         onChange={handleImageChange} 
                         className="hidden" 
                       />
-                      <div className={`
-                        bg-[#6DAE4B] text-white rounded-lg flex items-center justify-center gap-3
-                        cursor-pointer transition-colors hover:bg-[#5c9940]
-                      `} style={{ height: '56px', fontSize: '20px', fontWeight: '500' }}>
+                      <button 
+                        onClick={handleUploadClick}
+                        className={`
+                          w-full bg-[#6DAE4B] text-white rounded-lg flex items-center justify-center gap-3
+                          cursor-pointer transition-colors hover:bg-[#5c9940]
+                        `} 
+                        style={{ height: '56px', fontSize: '20px', fontWeight: '500' }}
+                      >
                         Upload Foto
                         <i className="fas fa-upload text-white" style={{ fontSize: '24px' }}></i>
-                      </div>
-                    </label>
+                      </button>
+                    </div>
                     
                     <button 
                       onClick={toggleCamera} 
@@ -403,9 +472,66 @@ export default function SkinScanPage() {
                     `}
                     style={{ width: '100%', height: '56px', fontSize: '20px', fontWeight: '500' }}
                   >
-                    {loading ? 'Processing...' : isImageTooSmall ? 'Gambar Terlalu Kecil' : 'Scan Kulitmu'}
+                    {loading ? 'Processing...' : 
+                     isImageTooSmall ? 'Gambar Terlalu Kecil' : 
+                     'Scan Kulitmu'}
                     <i className={`fas ${isImageTooSmall ? 'fa-exclamation-triangle' : 'fa-face-smile-beam'} text-white`} style={{ fontSize: '28px' }}></i>
                   </button>
+
+                  {/* Panduan Validasi Wajah */}
+                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0">
+                        <i className="fas fa-info-circle text-blue-400 text-xl"></i>
+                      </div>
+                      <div className="ml-3">
+                        <h3 className="text-sm font-medium text-blue-800">
+                          Panduan Foto yang Baik
+                        </h3>
+                        <div className="mt-2 text-sm text-blue-700">
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Gunakan foto wajah yang jelas dan menghadap kamera</li>
+                            <li>Pastikan pencahayaan cukup terang</li>
+                            <li>Ukuran gambar minimal 224x224 piksel</li>
+                            <li>Hindari foto yang terlalu jauh atau tertutup</li>
+                            <li>Hanya foto wajah yang akan diterima sistem (tidak termasuk foto benda, pemandangan, atau hewan)</li>
+                            <li>Sistem akan memvalidasi keberadaan wajah secara otomatis</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Validation Error Notification */}
+                  {validationError && (
+                    <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <i className="fas fa-exclamation-circle text-red-400 text-xl"></i>
+                        </div>
+                        <div className="ml-3 flex-1">
+                          <h3 className="text-sm font-medium text-red-800">
+                            Validasi Gagal
+                          </h3>
+                          <div className="mt-2 text-sm text-red-700">
+                            {validationError}
+                          </div>
+                          <div className="mt-2 text-xs text-red-600 font-medium">
+                            💡 Tip: Gunakan foto wajah yang berbeda atau coba scan lagi
+                          </div>
+                        </div>
+                        <div className="ml-4 flex-shrink-0">
+                          <button
+                            className="bg-white rounded-md text-red-400 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 p-1"
+                            onClick={() => setValidationError(null)}
+                          >
+                            <span className="sr-only">Tutup</span>
+                            <i className="fas fa-times text-sm"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </section>
 
@@ -415,14 +541,14 @@ export default function SkinScanPage() {
                   Jenis kulitmu
                 </p>
                 <h2 className="font-extrabold mb-[16px]" style={{ fontSize: '40px', lineHeight: '48px' }}>
-                  {result || '-'}
+                  {!isNewScan ? (result || '-') : '-'}
                 </h2>
                 <p className="font-semibold mb-[16px]" style={{ fontSize: '18px', lineHeight: '24px' }}>
                   Rekomendasi Produk Buatmu
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {suggestion.length > 0 ? suggestion
+                  {!isNewScan && suggestion.length > 0 ? suggestion
                     .filter(item => !['moisturizer', 'sunscreen'].includes(item.id))
                     .map((item, idx) => (
                       <article
@@ -464,7 +590,7 @@ export default function SkinScanPage() {
                 </div>
                 
                 {/* Essential Products Section */}
-                {suggestion.length > 0 && suggestion.some(item => ['moisturizer', 'sunscreen'].includes(item.id)) && (
+                {!isNewScan && suggestion.length > 0 && suggestion.some(item => ['moisturizer', 'sunscreen'].includes(item.id)) && (
                   <div className="mt-8">
                     <p className="font-semibold mb-4" style={{ fontSize: '18px', lineHeight: '24px' }}>
                       Produk Lain Yang Juga Bagus Buatmu
