@@ -14,7 +14,7 @@ async function predictClassification(model, image) {
     const faceValidation = await faceValidationService.validateComplete(imageBuffer);
     
     if (!faceValidation.valid) {
-      throw new InputError(faceValidation.reason);
+      throw new InputError(faceValidation.message || faceValidation.reason || 'Gambar tidak valid untuk analisis kulit wajah.');
     }
     
     console.log('✓ Validasi wajah berhasil:', faceValidation.message);
