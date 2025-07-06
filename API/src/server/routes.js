@@ -1,76 +1,56 @@
-const postPredictHandler = require('../server/handler');
-const fs = require('fs');
+const postPredictHandler = require('./handler');
 const path = require('path');
-require('dotenv').config();
- 
+
 const routes = [
   {
-    path: '/predict',
     method: 'POST',
+    path: '/predict',
     handler: postPredictHandler,
     options: {
       payload: {
         allow: 'multipart/form-data',
-        multipart: true
-      }
-    }
+        multipart: true,
+        maxBytes: 10 * 1024 * 1024, // 10MB
+      },
+    },
   },
   {
-    path: '/recommendations',
     method: 'GET',
-    handler: (request, h) => {
-      try {
-        const recommendationsPath = path.join(__dirname, '../recommendations.json');
-        const recommendations = JSON.parse(fs.readFileSync(recommendationsPath, 'utf-8'));
-        return h.response(recommendations).code(200);
-      } catch (error) {
-        console.error('Error reading recommendations:', error);
-        return h.response({ 
-          status: 'error',
-          message: 'Could not retrieve recommendations'
-        }).code(500);
-      }
-    }
+    path: '/uploads/{filename}',
+    handler: {
+      directory: {
+        path: path.join(__dirname, '../../uploads'),
+        listing: false,
+        index: false,
+      },
+    },
   },
   {
-    path: '/products',
     method: 'GET',
-    handler: (request, h) => {
-      try {
-        const productsPath = path.join(__dirname, '../products.json');
-        const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
-        return h.response(products).code(200);
-      } catch (error) {
-        console.error('Error reading products:', error);
-        return h.response({ 
-          status: 'error',
-          message: 'Could not retrieve products'
-        }).code(500);
-      }
-    }
-  },
-  {
     path: '/assets/{param*}',
-    method: 'GET',
     handler: {
       directory: {
         path: path.join(__dirname, '../../assets'),
-        redirectToSlash: true,
-        index: false
-      }
-    }
+        listing: false,
+        index: false,
+      },
+    },
   },
   {
-    path: '/uploads/{param*}',
     method: 'GET',
-    handler: {
-      directory: {
-        path: path.join(__dirname, '../../', process.env.UPLOAD_PATH || 'uploads'),
-        redirectToSlash: true,
-        index: false
-      }
-    }
-  }
-]
- 
+    path: '/',
+    handler: (request, h) => {
+      return h.response({
+        status: 'success',
+        message: 'API Skin Type Detection is running',
+        endpoints: {
+          predict: 'POST /predict',
+          uploads: 'GET /uploads/{filename}',
+          assets: 'GET /assets/{filename}'
+        }
+      });
+    },
+  },
+];
+
 module.exports = routes;

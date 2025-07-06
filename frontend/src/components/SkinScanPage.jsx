@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import * as faceDetection from '@tensorflow-models/face-detection';
+import '@tensorflow/tfjs-backend-webgl';
 
 export default function SkinScanPage() {
   const [image, setImage] = useState(null);
@@ -113,43 +115,54 @@ export default function SkinScanPage() {
   // Take photo from camera
   const capturePhoto = () => {
     if (!videoRef.current) return;
-    
+
     // Simpan hasil scan sebelumnya jika ada
     saveCurrentScanIfExists();
-    
+
     const canvas = document.createElement('canvas');
     canvas.width = videoRef.current.videoWidth;
     canvas.height = videoRef.current.videoHeight;
     const ctx = canvas.getContext('2d');
-    
+
     // Draw the video frame to the canvas
     ctx.drawImage(videoRef.current, 0, 0, canvas.width, canvas.height);
-    
+
     // Check dimensions
     const isTooSmall = canvas.width < 224 || canvas.height < 224;
     setImageDimensions({ width: canvas.width, height: canvas.height });
     setIsImageTooSmall(isTooSmall);
-    
+
     // Convert to file
-    canvas.toBlob((blob) => {
+    canvas.toBlob(async (blob) => {
       if (blob) {
         // Jika ada preview URL sebelumnya, hapus untuk mencegah memory leak
         if (preview && preview.startsWith('blob:')) {
           URL.revokeObjectURL(preview);
         }
-        
+
         const file = new File([blob], "camera-photo.jpg", { type: "image/jpeg" });
+        const previewUrl = URL.createObjectURL(blob);
+
+        // Validasi wajah
+        setLoading(true);
+        const isFace = await validateFace(previewUrl);
+        setLoading(false);
         setImage(file);
-        setPreview(URL.createObjectURL(blob));
+        setPreview(previewUrl);
         setShowCamera(false);
-        
-        // Reset semua state untuk scan baru
         setResult('-');
         setSuggestion([]);
         setSavedImagePath(null);
-        setValidationError(null);
-        setLoading(false);
         setIsNewScan(true);
+        if (!isFace) {
+          setValidationError('Gambar tidak terdeteksi wajah manusia. Silakan gunakan foto wajah yang jelas.');
+          setTimeout(() => {
+            setImage(null);
+            setPreview(null);
+          }, 3000);
+        } else {
+          setValidationError(null);
+        }
       }
     }, 'image/jpeg', 0.9);
   };
@@ -171,7 +184,32 @@ export default function SkinScanPage() {
     });
   };
 
-  const handleImageChange = (e) => {
+  // Fungsi validasi wajah menggunakan Blazeface (face-detection)
+  const validateFace = async (imageSrc) => {
+    try {
+      // Pastikan backend sudah siap
+      await faceDetection.setBackend && faceDetection.setBackend('webgl');
+      const detector = await faceDetection.createDetector(
+        faceDetection.SupportedModels.MediaPipeFaceDetector,
+        { runtime: 'tfjs' }
+      );
+      // Buat elemen gambar
+      const img = new window.Image();
+      img.src = imageSrc;
+      await new Promise((resolve, reject) => {
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+      // Deteksi wajah
+      const faces = await detector.estimateFaces(img);
+      return faces.length > 0;
+    } catch (err) {
+      console.error('Face validation error:', err);
+      return false;
+    }
+  };
+
+  const handleImageChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
       // Simpan hasil scan sebelumnya jika ada
@@ -204,6 +242,21 @@ export default function SkinScanPage() {
       
       // Validate image dimensions
       validateImageDimensions(file);
+      // Validasi wajah
+      setLoading(true);
+      const isFace = await validateFace(previewUrl);
+      setLoading(false);
+      if (!isFace) {
+        setValidationError('Gambar tidak terdeteksi wajah manusia. Silakan gunakan foto wajah yang jelas.');
+        setImage(file);
+        setPreview(previewUrl);
+        // tambah waktu tunggu 3 detik
+        setTimeout(() => {
+          setImage(null);
+          setPreview(null);
+          return;
+        }, 3000);
+      }
     }
   };
 
@@ -265,7 +318,7 @@ export default function SkinScanPage() {
         setValidationError(null); // Clear any previous validation errors
       } else if (response && response.status === 'fail') {
         // Tampilkan pesan error spesifik dari server sebagai validation error
-        setValidationError(response.message);
+        setValidationError(response.message || 'Gambar tidak valid. Pastikan gambar yang diunggah adalah wajah manusia.');
         setResult('-');
         setSuggestion([]);
         setSavedImagePath(null);
@@ -385,27 +438,22 @@ export default function SkinScanPage() {
                     <img 
                       src={savedImagePath || preview} 
                       alt="Preview" 
-                      className="w-full h-full object-cover"
+                      className={`w-full h-full object-cover ${validationError ? 'filter blur-md grayscale' : ''}`}
                       onError={() => {
                         // Jika gambar tersimpan gagal dimuat, gunakan preview lokal
                         if (savedImagePath) setSavedImagePath(null);
                       }} 
                     />
-                    {isImageTooSmall && (
-                      <div className="absolute bottom-0 left-0 right-0 bg-red-500 bg-opacity-80 text-white p-2 text-center font-semibold">
-                        <i className="fas fa-exclamation-triangle mr-2"></i>
-                        Ukuran gambar terlalu kecil ({imageDimensions.width}x{imageDimensions.height}px)
-                        <p className="text-sm">Minimum 224x224 piksel</p>
-                      </div>
-                    )}
-
-                    {validationError && (
-                      <div className="absolute bottom-0 left-0 right-0 bg-red-600 bg-opacity-90 text-white p-3 text-center font-semibold">
+                    {(isImageTooSmall || validationError) && (
+                      <div className="absolute left-0 bottom-0 w-full bg-red-600 bg-opacity-95 text-white px-6 py-3 text-center font-bold rounded-b-[16px] shadow-lg z-30 border-t-2 border-white" style={{maxWidth: '100%'}}>
                         <i className="fas fa-times-circle mr-2"></i>
-                        <div className="text-sm font-medium">{validationError}</div>
+                        <span className="text-base font-semibold">
+                          {isImageTooSmall && !validationError
+                            ? `Ukuran gambar terlalu kecil (${imageDimensions.width}x${imageDimensions.height}px). Gunakan gambar dengan minimal 224x224 piksel.`
+                            : 'Wajah tidak terdeteksi! Gunakan foto wajah yang jelas.'}
+                        </span>
                       </div>
                     )}
-
                   </>
                   ) : (
                     <div className="text-center">
@@ -464,18 +512,19 @@ export default function SkinScanPage() {
 
                   <button
                     onClick={handleScan}
-                    disabled={loading || !image || isImageTooSmall}
+                    disabled={loading || !image || isImageTooSmall || validationError}
                     className={`
                       text-white rounded-lg flex items-center justify-center gap-3
-                      ${!loading && image && !isImageTooSmall ? 'bg-[#6DAE4B] hover:bg-[#5c9940]' : 'bg-gray-400 cursor-not-allowed'}
+                      ${!loading && image && !isImageTooSmall && !validationError ? 'bg-[#6DAE4B] hover:bg-[#5c9940]' : 'bg-gray-400 cursor-not-allowed'}
                       transition-colors
                     `}
                     style={{ width: '100%', height: '56px', fontSize: '20px', fontWeight: '500' }}
                   >
                     {loading ? 'Processing...' : 
                      isImageTooSmall ? 'Gambar Terlalu Kecil' : 
+                     validationError ? 'Gunakan foto wajah anda!' :
                      'Scan Kulitmu'}
-                    <i className={`fas ${isImageTooSmall ? 'fa-exclamation-triangle' : 'fa-face-smile-beam'} text-white`} style={{ fontSize: '28px' }}></i>
+                    <i className={`fas ${isImageTooSmall || validationError ? 'fa-exclamation-triangle' : 'fa-face-smile-beam'} text-white`} style={{ fontSize: '28px' }}></i>
                   </button>
 
                   {/* Panduan Validasi Wajah */}
@@ -501,37 +550,6 @@ export default function SkinScanPage() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Validation Error Notification */}
-                  {validationError && (
-                    <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
-                      <div className="flex items-start">
-                        <div className="flex-shrink-0">
-                          <i className="fas fa-exclamation-circle text-red-400 text-xl"></i>
-                        </div>
-                        <div className="ml-3 flex-1">
-                          <h3 className="text-sm font-medium text-red-800">
-                            Validasi Gagal
-                          </h3>
-                          <div className="mt-2 text-sm text-red-700">
-                            {validationError}
-                          </div>
-                          <div className="mt-2 text-xs text-red-600 font-medium">
-                            💡 Tip: Gunakan foto wajah yang berbeda atau coba scan lagi
-                          </div>
-                        </div>
-                        <div className="ml-4 flex-shrink-0">
-                          <button
-                            className="bg-white rounded-md text-red-400 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 p-1"
-                            onClick={() => setValidationError(null)}
-                          >
-                            <span className="sr-only">Tutup</span>
-                            <i className="fas fa-times text-sm"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
               </section>
 

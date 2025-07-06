@@ -1,25 +1,12 @@
 const tf = require('@tensorflow/tfjs-node');
 const InputError = require('../exceptions/InputError');
 const getRecommendationBySkinType = require('./recommendationService');
-const faceValidationService = require('./faceValidationService');
 require('dotenv').config();
 
 async function predictClassification(model, image) {
   try {
     // Simpan buffer gambar asli untuk validasi dan penyimpanan
     const imageBuffer = Buffer.from(image);
-    
-    // VALIDASI WAJAH - Langkah pertama sebelum pemrosesan
-    console.log('Memvalidasi keberadaan wajah dalam gambar...');
-    const faceValidation = await faceValidationService.validateComplete(imageBuffer);
-    
-    if (!faceValidation.valid) {
-      throw new InputError(faceValidation.message || faceValidation.reason || 'Gambar tidak valid untuk analisis kulit wajah.');
-    }
-    
-    console.log('✓ Validasi wajah berhasil:', faceValidation.message);
-    
-    // Periksa ukuran gambar sebelum memproses
     const decodedImage = tf.node.decodeJpeg(image);
     const [height, width] = decodedImage.shape;
     
@@ -44,6 +31,8 @@ async function predictClassification(model, image) {
     const classResult = tf.argMax(prediction, 1).dataSync()[0];
     const label = classes[classResult];
 
+    console.log('🎯 Prediksi jenis kulit:', label, `(${Math.round(confidenceScore)}%)`);
+
     // Ambil rekomendasi dari file JSON
     const recommendationObj = getRecommendationBySkinType(label);
     let explanation = '', suggestion = [];
@@ -52,13 +41,21 @@ async function predictClassification(model, image) {
       suggestion = recommendationObj.recommendation;
     }
 
+    // Cleanup tensors
+    decodedImage.dispose();
+    tensor.dispose();
+    prediction.dispose();
+
     // Kembalikan imageBuffer untuk disimpan berdasarkan kategori kulit
-    return { confidenceScore, label, explanation, suggestion, imageBuffer };
-  } catch (error){
-    // Pastikan untuk membersihkan tensor jika ada error
-    if (typeof decodedImage !== 'undefined') {
-      decodedImage.dispose();
-    }
+    return { 
+      confidenceScore, 
+      label, 
+      explanation, 
+      suggestion, 
+      imageBuffer
+    };
+  } catch (error) {
+    console.error('❌ Error dalam prediksi:', error.message);
     throw new InputError(`Terjadi kesalahan input: ${error.message}`);
   }
 }

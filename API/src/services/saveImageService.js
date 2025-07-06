@@ -3,12 +3,6 @@ const path = require('path');
 const crypto = require('crypto');
 require('dotenv').config();
 
-/**
- * Menyimpan gambar berdasarkan kategori kulit yang terdeteksi
- * @param {Buffer} imageBuffer - Buffer gambar yang akan disimpan
- * @param {string} skinType - Jenis kulit yang terdeteksi (acne, combination, dry, normal, oily)
- * @returns {string} URL gambar relatif
- */
 async function saveImageBySkinType(imageBuffer, skinType) {
   try {
     // Validasi tipe kulit

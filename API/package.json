@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server/server.js"
+    "test": "node test-api.js",
+    "start": "node src/server/server.js",
+    "dev": "nodemon src/server/server.js",
+    "test:face": "node -e \"require('./test-api.js').testFaceValidation()\""
   },
   "keywords": [],
   "author": "",
@@ -13,11 +15,22 @@
   "dependencies": {
     "@hapi/hapi": "^21.4.0",
     "@hapi/inert": "^7.1.0",
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/face_detection": "^0.4.1646425229",
+    "@tensorflow-models/face-detection": "^1.0.3",
     "@tensorflow/tfjs": "^4.22.0",
     "@tensorflow/tfjs-layers": "^4.22.0",
     "@tensorflow/tfjs-node": "^4.22.0",
+    "axios": "^1.10.0",
     "canvas": "^2.11.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "face-api.js": "^0.20.0"
+    "express": "^5.1.0",
+    "form-data": "^4.0.3",
+    "multer": "^2.0.1",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
