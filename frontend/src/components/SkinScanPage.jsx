@@ -2,6 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import * as faceDetection from '@tensorflow-models/face-detection';
 import '@tensorflow/tfjs-backend-webgl';
+import '@tensorflow/tfjs-backend-cpu';
+
+// Gunakan .env untuk base url API dan asset
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const ASSET_BASE_URL = import.meta.env.VITE_ASSET_URL || API_BASE_URL;
 
 export default function SkinScanPage() {
   const [image, setImage] = useState(null);
@@ -188,7 +193,8 @@ export default function SkinScanPage() {
   const validateFace = async (imageSrc) => {
     try {
       // Pastikan backend sudah siap
-      await faceDetection.setBackend && faceDetection.setBackend('webgl');
+      // await faceDetection.setBackend && faceDetection.setBackend('webgl');
+      await faceDetection.setBackend;
       const detector = await faceDetection.createDetector(
         faceDetection.SupportedModels.MediaPipeFaceDetector,
         { runtime: 'tfjs' }
@@ -287,37 +293,26 @@ export default function SkinScanPage() {
   const handleScan = async () => {
     if (!image || isImageTooSmall) return;
     setLoading(true);
-    
-    // Reset validation error saat memulai scan baru
     setValidationError(null);
-    
     const formData = new FormData();
     formData.append('image', image);
     formData.append('model_name', 'mobilenet_80/model.json');
-    
     try {
-      const res = await fetch('http://localhost:3000/predict', {
+      const res = await fetch(`${API_BASE_URL}/predict`, {
         method: 'POST',
         body: formData,
       });
       const response = await res.json();
-      
-      // Check if response has data property and then the result
       if (response && response.data && response.data.result) {
         const data = response.data;
         setResult(data.explanation);
         setSuggestion(data.suggestion || []);
-        
-        // Jika ada path gambar tersimpan, gunakan untuk tampilan
         if (data.imagePath) {
-          setSavedImagePath(`http://localhost:3000${data.imagePath}`);
+          setSavedImagePath(`${API_BASE_URL}${data.imagePath}`);
         }
-        
-        // Tandai bahwa ini bukan scan baru lagi
         setIsNewScan(false);
-        setValidationError(null); // Clear any previous validation errors
+        setValidationError(null);
       } else if (response && response.status === 'fail') {
-        // Tampilkan pesan error spesifik dari server sebagai validation error
         setValidationError(response.message || 'Gambar tidak valid. Pastikan gambar yang diunggah adalah wajah manusia.');
         setResult('-');
         setSuggestion([]);
@@ -336,9 +331,6 @@ export default function SkinScanPage() {
       setSavedImagePath(null);
     }
     setLoading(false);
-    
-    // Tidak perlu mereset form setelah scan, biarkan hasil tetap ditampilkan
-    // Akan di-reset saat user memilih upload baru atau kamera
   };
 
   // Fungsi untuk reset form tanpa menghapus hasil scan sebelumnya
@@ -581,11 +573,11 @@ export default function SkinScanPage() {
                       >
                         <div className="relative w-full" style={{ height: '160px', aspectRatio: '1/1' }}>
                           <img
-                            src={item.image ? `http://localhost:3000${item.image}` : "http://localhost:3000/assets/product/produk.webp"}
+                            src={item.image ? `${ASSET_BASE_URL}${item.image}` : `${ASSET_BASE_URL}/assets/product/produk.webp`}
                             alt={item.name}
                             className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                             onError={(e) => {
-                              e.target.src = "http://localhost:3000/assets/product/produk.webp";
+                              e.target.src = `${ASSET_BASE_URL}/assets/product/produk.webp`;
                             }}
                           />
                         </div>
@@ -629,11 +621,11 @@ export default function SkinScanPage() {
                           >
                             <div className="relative w-full" style={{ height: '160px', aspectRatio: '1/1' }}>
                               <img
-                                src={item.image ? `http://localhost:3000${item.image}` : "http://localhost:3000/assets/product/produk.webp"}
+                                src={item.image ? `${ASSET_BASE_URL}${item.image}` : `${ASSET_BASE_URL}/assets/product/produk.webp`}
                                 alt={item.name}
                                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                                 onError={(e) => {
-                                  e.target.src = "http://localhost:3000/assets/product/produk.webp";
+                                  e.target.src = `${ASSET_BASE_URL}/assets/product/produk.webp`;
                                 }}
                               />
                             </div>

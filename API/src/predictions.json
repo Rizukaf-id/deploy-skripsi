@@ -1,0 +1,919 @@
+[
+  {
+    "id": "22312fd0-0f19-48aa-9e2f-958c43ea8a40",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 98.7163782119751,
+    "createdAt": "2025-07-07T02:52:21.153Z",
+    "imagePath": "/uploads/normal/normal_1751856741156_5008969ac826bb06.jpg"
+  },
+  {
+    "id": "9696c00c-1241-46d1-ad7a-5204a8a29273",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 95.9976315498352,
+    "createdAt": "2025-07-07T02:52:29.946Z",
+    "imagePath": "/uploads/oily/oily_1751856749948_26624d7ec82ffc39.jpg"
+  },
+  {
+    "id": "3d6a8fcc-6981-469a-a29f-9319aa3b268a",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-07T03:06:07.035Z",
+    "imagePath": "/uploads/normal/normal_1751857567036_260d09e362cef2ad.jpg"
+  },
+  {
+    "id": "84ca54c8-b307-458a-9c6a-096b27badd62",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-07T03:21:30.336Z",
+    "imagePath": "/uploads/normal/normal_1751858490339_0a50d86e47b0e09b.jpg"
+  },
+  {
+    "id": "03a4f549-3532-458e-8f26-3e57405f2b5a",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 89.47071433067322,
+    "createdAt": "2025-07-07T10:20:18.169Z",
+    "imagePath": "/uploads/normal/normal_1751883618171_2ffd89380870e29f.jpg"
+  },
+  {
+    "id": "8cf8bc64-0fce-4109-bcae-7f2147137694",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-07T10:20:55.159Z",
+    "imagePath": "/uploads/normal/normal_1751883655161_f247ee49bac7bcfe.jpg"
+  },
+  {
+    "id": "7a422bdb-d675-4707-978e-16bee59c1d8d",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 94.89936232566833,
+    "createdAt": "2025-07-07T23:19:50.911Z",
+    "imagePath": "/uploads/normal/normal_1751930390916_b8874ac4b6de1687.jpg"
+  },
+  {
+    "id": "d9ceec01-2f71-4347-a446-1f8937e1e07a",
+    "result": "acne",
+    "explanation": "Kulit Berjerawat",
+    "suggestion": [
+      {
+        "id": "oil-acne-facial-wash",
+        "name": "Oil Acne Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/acne-expert-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-acne-facial-wash-satuan-ujop"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 55.04552721977234,
+    "createdAt": "2025-07-07T23:29:05.035Z",
+    "imagePath": "/uploads/acne/acne_1751930945036_06b0851d5ab37c12.jpg"
+  },
+  {
+    "id": "5932ee38-d80f-4001-9ff1-d23f9c868524",
+    "result": "oily",
+    "explanation": "Kulit Berminyak",
+    "suggestion": [
+      {
+        "id": "oil-control-facial-wash",
+        "name": "Oil Control Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/oil-control-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-oil-control-facial-wash-satuan-qatm"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "price": "Rp80.000",
+        "image": "/assets/product/acne-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-serum-wajah-acne-fight-expert-satuan-ktet"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 77.85912752151489,
+    "createdAt": "2025-07-07T23:29:59.672Z",
+    "imagePath": "/uploads/oily/oily_1751930999677_d506a9d78a7982a7.jpg"
+  },
+  {
+    "id": "22b10098-f39a-4edb-8054-40fbaf3c6eb6",
+    "result": "dry",
+    "explanation": "Kulit Kering dan Kusam",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 62.761056423187256,
+    "createdAt": "2025-07-07T23:31:30.288Z",
+    "imagePath": "/uploads/dry/dry_1751931090292_f22514d481d52769.jpg"
+  },
+  {
+    "id": "308cf8d6-93b2-4d37-ad2e-873bacbd926a",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 98.7163782119751,
+    "createdAt": "2025-07-07T23:54:10.411Z",
+    "imagePath": "/uploads/normal/normal_1751932450413_1b35d3a82ab99d2c.jpg"
+  },
+  {
+    "id": "b7195a08-47dd-4a7f-813c-74906c2e6923",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-07T23:54:24.026Z",
+    "imagePath": "/uploads/normal/normal_1751932464034_9f20c26b921eadf1.jpg"
+  },
+  {
+    "id": "9d0b4ed0-1058-41b7-8732-b494b0195dd3",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-07T23:54:55.311Z",
+    "imagePath": "/uploads/normal/normal_1751932495314_eefa829926ef833a.jpg"
+  },
+  {
+    "id": "f080bac2-6c43-4f8f-8e71-51d9a49b170d",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 98.7163782119751,
+    "createdAt": "2025-07-07T23:55:14.734Z",
+    "imagePath": "/uploads/normal/normal_1751932514737_affa5c62b29f2968.jpg"
+  },
+  {
+    "id": "726a62b7-7d71-4f36-b55b-c5061acd2313",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-08T00:00:16.711Z",
+    "imagePath": "/uploads/normal/normal_1751932816714_f234d171d7e08b99.jpg"
+  },
+  {
+    "id": "f9dfc159-4386-48e5-92d5-b0f31c362e06",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-08T00:01:03.534Z",
+    "imagePath": "/uploads/normal/normal_1751932863535_2e7f641c80247998.jpg"
+  },
+  {
+    "id": "d0bc962c-bede-4051-a697-25624ac53b5c",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-08T00:02:43.999Z",
+    "imagePath": "/uploads/normal/normal_1751932964002_f697bd89587ec5bd.jpg"
+  },
+  {
+    "id": "d651bbb7-1e89-4c67-9840-053613d86a97",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 98.7163782119751,
+    "createdAt": "2025-07-08T00:06:42.375Z",
+    "imagePath": "/uploads/normal/normal_1751933202377_1dfaad7528e2b202.jpg"
+  },
+  {
+    "id": "ecc78d0b-8643-48a3-b08e-2b2c951b671e",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 98.7163782119751,
+    "createdAt": "2025-07-08T00:10:04.683Z",
+    "imagePath": "/uploads/normal/normal_1751933404685_cb427dce5544243f.jpg"
+  },
+  {
+    "id": "678187a2-5210-4e9d-9f18-f1d0e551f3d3",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 77.54676342010498,
+    "createdAt": "2025-07-08T00:10:09.887Z",
+    "imagePath": "/uploads/normal/normal_1751933409889_7b81f9b034fae53f.jpg"
+  },
+  {
+    "id": "0c586546-8b26-4a89-92dd-37ae2e5acc50",
+    "result": "normal",
+    "explanation": "Kulit Normal",
+    "suggestion": [
+      {
+        "id": "brightening-facial-wash",
+        "name": "Brightening Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/brightening-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-facial-wash-satuan-sahl"
+      },
+      {
+        "id": "everest-facial-wash",
+        "name": "Everest Facial Wash",
+        "price": "Rp45.000",
+        "image": "/assets/product/everest-facial-wash.webp",
+        "store_url": "https://bromen.id/products/bromen-everest-facial-wash-satuan-6kwk"
+      },
+      {
+        "id": "brightening-serum",
+        "name": "Brightening Serum",
+        "price": "Rp71.000",
+        "image": "/assets/product/brightening-serum.webp",
+        "store_url": "https://bromen.id/products/bromen-brightening-serum-satuan-i1ki"
+      },
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "price": "Rp53.000",
+        "image": "/assets/product/moisturizer.webp",
+        "store_url": "https://bromen.id/products/bromen-moisturizer-satuan-vhhq"
+      },
+      {
+        "id": "sunscreen",
+        "name": "Sunscreen",
+        "price": "Rp57.000",
+        "image": "/assets/product/sunscreen.webp",
+        "store_url": "https://bromen.id/products/bromen-uv-shield-protection-sunscreen-satuan-3llh"
+      }
+    ],
+    "confidenceScore": 85.11559963226318,
+    "createdAt": "2025-07-08T00:10:16.475Z",
+    "imagePath": "/uploads/normal/normal_1751933416476_a267a036fa79770f.jpg"
+  }
+]

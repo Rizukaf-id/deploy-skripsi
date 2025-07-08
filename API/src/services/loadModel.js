@@ -5,7 +5,6 @@ require('dotenv').config();
 
 async function loadModel(modelName) {
     try {
-        // modelName: e.g. 'mobilenet_80/model.json'
         const modelDir = process.env.MODEL_PATH || '../../../models';
         const modelPath = path.resolve(__dirname, modelDir, modelName);
         
